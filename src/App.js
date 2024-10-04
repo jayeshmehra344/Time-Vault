@@ -12,20 +12,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* Social Icons */}
-      <div className="social-icons-vertical">
-        <a href="https://github.com/sohumcs" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/sohumcs/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </div>
-
-      <h1>Digital Time Capsule</h1>
+      <header>
+        <h1>TimeVault</h1>
+        <p>Secure your memories for future you</p>
+      </header>
       
       <TimeCapsuleForm onCreateCapsule={addCapsule} />
-      <h2>Upcoming Capsules</h2>
+      <h2>Future Capsules</h2>
       <TimeCapsuleList capsules={capsules} />
     </div>
   );

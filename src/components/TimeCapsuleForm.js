@@ -14,7 +14,7 @@ const TimeCapsuleForm = ({ onCreateCapsule }) => {
       title,
       content,
       unlockDate: new Date(unlockDate),
-      file, // Save the file in the capsule object
+      file,
     };
 
     onCreateCapsule(capsule);
@@ -24,39 +24,34 @@ const TimeCapsuleForm = ({ onCreateCapsule }) => {
     setFile(null);
   };
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]); // Save the selected file to state
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Title:</label>
+    <form className="time-capsule-form" onSubmit={handleSubmit}>
+      <label>Capsule Title</label>
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
+        placeholder="Enter title"
       />
-
-      <label>Content:</label>
+      <label>Memories</label>
       <textarea
         value={content}
         onChange={(e) => setContent(e.target.value)}
         required
+        placeholder="Describe your memories..."
       />
-
-      <label>Unlock Date and Time:</label>
+      <label>Unlock Date</label>
       <input
         type="datetime-local"
         value={unlockDate}
         onChange={(e) => setUnlockDate(e.target.value)}
         required
       />
+      <label>Attach a File (Optional)</label>
+      <input type="file" onChange={(e) => setFile(e.target.files[0])} />
 
-      <label>Upload File:</label>
-      <input type="file" onChange={handleFileChange} required />
-
-      <button type="submit">Create Time Capsule</button>
+      <button type="submit">Lock Time Capsule</button>
     </form>
   );
 };

@@ -44,7 +44,6 @@ const TimeCapsuleList = ({ capsules }) => {
                 : 'Unlocked!'}
             </p>
 
-            {/* Show file if capsule is unlocked */}
             {isUnlocked ? (
               capsule.file ? (
                 <a href={URL.createObjectURL(capsule.file)} download={capsule.file.name}>
