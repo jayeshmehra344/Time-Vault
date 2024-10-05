@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Time-Vault/static/css/main.5133c3ea.css",
+    "main.js": "/Time-Vault/static/js/main.57061892.js",
+    "index.html": "/Time-Vault/index.html",
+    "main.5133c3ea.css.map": "/Time-Vault/static/css/main.5133c3ea.css.map",
+    "main.57061892.js.map": "/Time-Vault/static/js/main.57061892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5133c3ea.css",
+    "static/js/main.57061892.js"
+  ]
+}
