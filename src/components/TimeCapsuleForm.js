@@ -48,7 +48,7 @@ const TimeCapsuleForm = ({ onCreateCapsule }) => {
         onChange={(e) => setUnlockDate(e.target.value)}
         required
       />
-      <label>Attach a File (Optional)</label>
+      <label>Attach a File</label>
       <input type="file" onChange={(e) => setFile(e.target.files[0])} />
 
       <button type="submit">Lock Time Capsule</button>
